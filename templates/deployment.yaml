@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.fullnameOverride }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Values.fullnameOverride }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.fullnameOverride }}
+    spec:
+      containers:
+      - name: {{ .Values.fullnameOverride }}
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        ports:
+        - containerPort: {{ .Values.containerPort }}
+        resources:
+          requests:
+            cpu: {{ .Values.deployment.requests.cpu }}
+            memory: {{ .Values.deployment.requests.memory }}
+          limits:
+            cpu: {{ .Values.deployment.limits.cpu }}
+            memory: {{ .Values.deployment.limits.memory }}
