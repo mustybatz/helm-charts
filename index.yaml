@@ -3,6 +3,16 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-06-11T19:29:26.567454537Z"
+    description: A Helm chart for hosting web applications on Kubernetes
+    digest: 8ce823e65c20880b4914f4983f974e8577ae5082fc2533955441d1f7c0e9b7ee
+    name: webapp
+    type: application
+    urls:
+    - https://github.com/mustybatz/helm-charts/releases/download/webapp-0.1.1/webapp-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-06-11T19:22:19.81899663Z"
     description: A Helm chart for Kubernetes
     digest: 956b339718eaa6336c0c423a911a85f07fcf8a409dacd9ccba697ee585004394
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/mustybatz/webapps-chart/releases/download/webapp-0.1.0/webapp-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-11T19:22:19.81900103Z"
+generated: "2023-06-11T19:29:26.567465937Z"
