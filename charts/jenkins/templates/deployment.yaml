@@ -31,4 +31,3 @@ spec:
             memory: {{ .Values.deployment.limits.memory }}
       volumes:
         - name: {{ .Values.fullnameOverride }}-vol
-          emptyDir: {}
