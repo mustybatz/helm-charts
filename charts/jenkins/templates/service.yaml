@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.fullnameOverride }}
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: {{ .Values.fullnameOverride }}
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.fullnameOverride }}-jnlp
+spec:
+  ports:
+    - port: 50000
+      targetPort: 50000
+  selector:
+    app: {{ .Values.fullnameOverride }}      
