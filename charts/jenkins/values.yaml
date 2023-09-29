@@ -1,5 +1,4 @@
 fullnameOverride: ""
-containerPort: 8080
 
 deployment:
   limits:

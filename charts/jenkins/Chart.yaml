@@ -1,6 +1,6 @@
 apiVersion: v2
-name: webapp
-description: A Helm chart for hosting web applications on Kubernetes
+name: jenkins
+description: A Helm chart for hosting jenkins on Kubernetes
 
 # A chart can be either an 'application' or a 'library' chart.
 #
